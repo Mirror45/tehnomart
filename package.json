@@ -1,0 +1,42 @@
+{
+  "name": "new",
+  "version": "2.0.0",
+  "description": "Шаблон",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "stylelint": "13.12.0",
+    "stylelint-config-htmlacademy": "0.1.4"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp css",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mirror45/new.git"
+  },
+  "author": "Mirror",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mirror45/new/issues"
+  },
+  "homepage": "https://github.com/Mirror45/new#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.54.7"
+  }
+}

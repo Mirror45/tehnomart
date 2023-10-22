@@ -1,0 +1,55 @@
+.page__body {
+  min-height: 100vh;
+  color: $basic-black;
+  background-color: $basic-white;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+
+  &::before {
+    content: url(../icon/sprite.svg);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  font: inherit;
+  text-decoration: none;
+}
+
+.input {
+  display: inline-block;
+  padding: 5px;
+  font: inherit;
+
+  &::placeholder {
+    color: currentColor;
+  }
+}
