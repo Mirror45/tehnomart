@@ -1,2 +1,23 @@
-$basic-black: #000000;
+$basic-red: #ee3643;
+$basic-green: #63a63e;
+$basic-grey: #3d546f;
+$basic-greylight: #c5c5c5;
+$basic-background: #f1f5f7;
 $basic-white: #ffffff;
+$basic-black: #000000;
+$special-ylellow: #ffbf47;
+$special-blue: #3bbce3;
+$special-italic: #dc91d8;
+$special-greenligth: #8ed78f;
+$special-ylellowligth: #ffd180;
+$status-secondary-hover: #5fbb2d;
+$status-secondary-active: #518534;
+$status-accent-hover: #ca2c37;
+$status-accent-active: #ba2732;
+$gradient-greylight: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%
+  ),
+  #eaeaea;
+$shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);

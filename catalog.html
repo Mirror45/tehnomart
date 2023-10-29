@@ -4,25 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self' ws://localhost:*"
-    />
-    <title>Document</title>
+    <title>Техномарт</title>
     <link rel="icon" href="src/icon/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="src/icon/favicon.svg" type="image/svg+xml" />
     <link rel="srcle-touch-icon" href="src/icon/180.png" type="image/png" />
-    <link
-      rel="manifest"
-      href="src/img/icon/manifest.webmanifest"
-      type="srclication/manifest+json"
-    />
+    <!-- <link rel="manifest" href="src/img/icon/manifest.webmanifest" type="srclication/manifest+json"/> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/normalize.css" />
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body class="page__body page__catalog">
     <header class="main-header"></header>
-    <main class="page__main"></main>
+    <main class="page__main">
+      <h1 class="visually-hidden">Каталог Магазина Техномарт</h1>
+
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link">
+                <img
+                  src="/src/img/breadcrumbs/icon-home.svg"
+                  alt="Главная страница"
+                  width="14"
+                  height="12"
+                  class="breadcrumbs__home-icon"
+                />
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Инструмент</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Перфораторы</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
     <footer class="main-footer"></footer>
     <script src="src/js/script.js"></script>
   </body>

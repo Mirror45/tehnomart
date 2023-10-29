@@ -1,14 +1,12 @@
 .page__body {
   min-height: 100vh;
-  color: $basic-black;
-  background-color: $basic-white;
-  font-family: "Arial", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
-  font-weight: normal;
-
-  &::before {
-    content: url(../icon/sprite.svg);
-  }
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $basic-black;
+  background-color: $basic-background;
 }
 
 img {
@@ -32,16 +30,45 @@ img {
 
 .container {
   margin: 0 auto;
+  width: 940px;
+  padding: 0 40px;
+}
+
+.title {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: $basic-black;
+  text-transform: uppercase;
 }
 
 .button {
   display: inline-block;
-  padding: 5px;
-  color: inherit;
-  background-color: transparent;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: "Cuprum", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $basic-red;
   border: none;
-  font: inherit;
   text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $status-accent-hover;
+  }
+
+  &:active {
+    background-color: $status-accent-active;
+  }
 }
 
 .input {
