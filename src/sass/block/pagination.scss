@@ -1,0 +1,39 @@
+.pagination__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__item {
+  margin-right: 10px;
+}
+
+.pagination__link {
+  display: block;
+  padding: 10px 15px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $basic-black;
+  border-radius: 2px;
+  border: 1px solid #e5e5e5;
+
+  &--next {
+    padding-left: 30px;
+    padding-right: 33px;
+  }
+
+  &:hover {
+    border: 1px solid $basic-greylight;
+  }
+
+  &:active {
+    border: 1px solid $basic-red;
+  }
+}
+
+.pagination__link--current {
+  color: $basic-white;
+  background-color: $basic-red;
+}

@@ -1,0 +1,16 @@
+.catalog-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.catalog-header__title {
+  display: block;
+  order: 1;
+  margin: 0;
+  padding: 29px;
+  padding-bottom: 30px;
+  width: 100%;
+  background-color: $basic-background;
+  box-sizing: border-box;
+}

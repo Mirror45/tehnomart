@@ -1,0 +1,140 @@
+.card-products__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 318px;
+  padding-top: 22px;
+  padding-left: 18px;
+  padding-right: 17px;
+  padding-bottom: 20px;
+  border: 1px solid #eaeaea;
+  box-sizing: border-box;
+
+  .button--bookmarks {
+    display: none;
+    cursor: pointer;
+  }
+
+  .button--buy {
+    margin-bottom: 10px;
+    display: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.15));
+
+    .button--buy,
+    .button--bookmarks {
+      display: block;
+    }
+
+    .card-product__photo {
+      display: none;
+    }
+  }
+}
+
+.card-product__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 144px;
+  height: 128px;
+}
+
+.card-product__title {
+  padding: 0;
+  margin: 0;
+  margin-top: 29px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: $basic-black;
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
+}
+
+.card-product__old-price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration-line: line-through;
+  color: #a9a9a9;
+}
+
+.card-product__button {
+  margin-top: auto;
+}
+
+.card-product__button--price {
+  margin-left: 10px;
+  padding-left: 32px;
+  min-width: 141px;
+  font-family: "PT Sans";
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: left;
+  clip-path: polygon(0% 100%, 118px 100%, 100% 50%, 118px 0%, 0% 0%);
+}
+
+.button--buy {
+  position: relative;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 10px;
+  padding-right: 0;
+  min-width: 135px;
+  background-color: $basic-green;
+  box-shadow: inset 0px -3px 0px #367315;
+  border-radius: 2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    background-image: url(/src/img/card-products/icon-cart.svg);
+  }
+
+  &:hover {
+    background-color: $status-secondary-hover;
+  }
+
+  &:active {
+    background-color: $status-secondary-active;
+  }
+}
+
+.button--bookmarks {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  min-width: 135px;
+  color: #32425c;
+  background-color: transparent;
+  border: 3px solid $basic-green;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: transparent;
+    border-color: #32425c;
+  }
+
+  &:active {
+    background-color: transparent;
+    opacity: 0.5;
+  }
+}
